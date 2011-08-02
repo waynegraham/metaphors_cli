@@ -21,3 +21,7 @@ Alternatively, you can change the ACL on the file:
 After this, you can execute the program with:
 
     ./metaphors.rb
+
+## More Reading
+
+* [http://rubydoc.info/gems/rsolr-ext/1.0.3/frames](http://rubydoc.info/gems/rsolr-ext/1.0.3/frames)
