@@ -6,21 +6,37 @@ generate reports.
 ## Usage
 This uses bundler to ensure you have everything installed:
 
-    gem install bundler
-    bundle install
+```shell
+$ gem install bundler
+$ bundle install
+```
 
 After all the gem dependencies are resolved, tweak the query parameters
 and run the program from the terminal:
 
-    ruby metaphors.rb
+```shell
+$ ruby bin/metaphors.rb search SEARCHTERM
+```
+
+If you run into problems, you can ask the client for help:
+
+```shell
+$ ruby bin/metaphors.rb help
+```
+
+You can also run this with pretty colors:
+
+```shell
+$ ruby bin/metaphors.rb search Uncategorized --verbose
+```
 
 Alternatively, you can change the ACL on the file:
 
-    chmod +x metaphors.rb
+    chmod +x bin/metaphors.rb
 
 After this, you can execute the program with:
 
-    ./metaphors.rb
+    ./bin/metaphors.rb search Uncategorized
 
 ## More Reading
 
