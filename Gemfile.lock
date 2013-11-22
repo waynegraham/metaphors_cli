@@ -1,0 +1,19 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    builder (3.2.2)
+    colorize (0.6.0)
+    rsolr (1.0.9)
+      builder (>= 2.1.2)
+    rsolr-ext (1.0.3)
+      rsolr (>= 1.0.2)
+    thor (0.18.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  colorize
+  rsolr
+  rsolr-ext
+  thor
