@@ -18,9 +18,10 @@ class SolrUtilities
   end
 
   def query_solr(year)
-    work_year = year.to_s.chop! + "*"
+    year_string = "{#{year} TO #{year + 9}}"
+
     solr_params = {
-      :queries => { :categories => @term, :work_year => work_year },
+      :queries => { :categories => @term, :work_year_sort => year_string },
       :facets => { :fields => ['work_genres'] }
     }
 
@@ -53,6 +54,7 @@ class SolrUtilities
         end
       end if response.ok?
     end
+
     report_string
   end
 
